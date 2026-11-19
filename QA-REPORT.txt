@@ -1,0 +1,20 @@
+ML Donations package QA report
+================================
+JavaScript parser checks passed: 10 executable scripts (external + inline).
+PASS JavaScript syntax: jsonbin-config.js
+PASS JavaScript syntax: pwa-install.js
+PASS JavaScript syntax: service-worker.js
+PASS inline JavaScript: index.html script #0 (2177 chars)
+PASS inline JavaScript: index.html script #1 (1246063 chars)
+PASS inline JavaScript: index.html script #2 (597 chars)
+PASS inline JavaScript: index.html script #6 (5621 chars)
+PASS inline JavaScript: member.html script #1 (598783 chars)
+PASS inline JavaScript: admin/index.html script #1 (17158 chars)
+PASS inline JavaScript: admin.html script #0 (56 chars)
+PASS JSON format: jsonbin-seed.json
+PASS JSON format: manifest.webmanifest
+PASS local script, stylesheet, and image references: all checked files exist
+PASS embedded member app payload JSON: index.html
+PASS ZIP source files checked for truncation indicators: no TODO/FIXME/YOUR_ placeholders found in executable JS/config.
+
+Limitations: Static validation confirms syntax, valid JSON, and local asset references. It does not prove that the live JSONBin credentials/bin permissions, browser-specific installation prompts, or all user flows work on a deployed domain. Test those after publishing with dummy data.
